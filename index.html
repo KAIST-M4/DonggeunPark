@@ -498,35 +498,19 @@
             <a href="cv.pdf" class="btn" target="_blank">View CV</a>
         </div>
         <div class="home-img">
-            <video id="dgVideo" autoplay muted playsinline width="280" height="280" style="
-                border-radius: 50%;
-                border: 3px solid transparent;
-                background: linear-gradient(#121212, #121212) padding-box,
-                            linear-gradient(90deg, #8a2be2, #ff3e3e, #4169e1) border-box;
-                box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
-                object-fit: cover;
-            ">
-                <source src="assets/DG.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+          <video autoplay loop muted playsinline width="280" height="280" style="
+              border-radius: 50%;
+              border: 3px solid transparent;
+              background: linear-gradient(#121212, #121212) padding-box,
+                          linear-gradient(90deg, #8a2be2, #ff3e3e, #4169e1) border-box;
+              box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+              object-fit: cover;
+          ">
+            <source src="assets/DG.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        
-        <script>
-            const video = document.getElementById('dgVideo');
-        
-            const startTime = 8;
-            const endTime = 10;
-        
-            video.addEventListener('loadedmetadata', () => {
-                video.currentTime = startTime;
-            });
-        
-            video.addEventListener('timeupdate', () => {
-                if (video.currentTime >= endTime) {
-                    video.currentTime = startTime;
-                }
-            });
-        </script>
+
 
     </section>
     
@@ -575,9 +559,9 @@
         <div class="section-title">Publications</div>
         <div class="publications-content fade-in">
             <ul>
-                <li>Kim, Y. (2024). "Transformer Architectures for Educational Content Generation". <i>Journal of AI Research</i>, Vol. 45, pp. 217-234.</li>
-                <li>Kim, Y., & Lee, J. (2023). "Neural Language Models for Korean Educational NLP". <i>Computational Linguistics</i>, Vol. 42(3), pp. 128-146.</li>
-                <li>Kim, Y., Park, S., & Johnson, R. (2022). "Data Science Applications in Higher Education". <i>Education Technology Review</i>, Vol. 18(2), pp. 89-107.</li>
+                <li>Donggeun Park. (2024). "Transformer Architectures for Educational Content Generation". <i>Journal of AI Research</i>, Vol. 45, pp. 217-234.</li>
+                <li>Donggeun Park. (2023). "Neural Language Models for Korean Educational NLP". <i>Computational Linguistics</i>, Vol. 42(3), pp. 128-146.</li>
+                <li>Donggeun Park. (2022). "Data Science Applications in Higher Education". <i>Education Technology Review</i>, Vol. 18(2), pp. 89-107.</li>
             </ul>
         </div>
     </section>
