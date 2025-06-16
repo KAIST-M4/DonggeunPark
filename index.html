@@ -478,7 +478,7 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar">
-            <div class="logo">Prof. YourName</div>
+            <div class="logo">Donggeun Park</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -498,8 +498,36 @@
             <a href="cv.pdf" class="btn" target="_blank">View CV</a>
         </div>
         <div class="home-img">
-            <img src="assets/증명사진2.jpg" alt="Profile Photo">
+            <video id="dgVideo" autoplay muted playsinline width="280" height="280" style="
+                border-radius: 50%;
+                border: 3px solid transparent;
+                background: linear-gradient(#121212, #121212) padding-box,
+                            linear-gradient(90deg, #8a2be2, #ff3e3e, #4169e1) border-box;
+                box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+                object-fit: cover;
+            ">
+                <source src="assets/DG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        
+        <script>
+            const video = document.getElementById('dgVideo');
+        
+            const startTime = 8;
+            const endTime = 10;
+        
+            video.addEventListener('loadedmetadata', () => {
+                video.currentTime = startTime;
+            });
+        
+            video.addEventListener('timeupdate', () => {
+                if (video.currentTime >= endTime) {
+                    video.currentTime = startTime;
+                }
+            });
+        </script>
+
     </section>
     
     <!-- About Section -->
